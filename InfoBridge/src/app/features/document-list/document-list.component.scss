@@ -1,0 +1,106 @@
+/* src/app/features/document-list/document-list.component.scss */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* Ensure body takes full height for proper centering */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom styles for better aesthetics */
+
+/* Adjust container padding and shadow for a more prominent look */
+.container {
+    padding: 2.5rem; /* Increased padding for more breathing room */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
+    /* Ensure container takes appropriate width on various screens */
+    width: 100%; /* Allow container to take full available width */
+    max-width: 100%; /* Remove max-width to allow it to expand fully */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem; /* Add margin top to separate from top of the screen/sidebar */
+    margin-bottom: 2rem; /* Add margin bottom */
+}
+
+/* Style for main heading */
+h1 {
+    margin-bottom: 2rem; /* More space below the main title */
+}
+
+/* Style for category headings */
+h2 {
+    margin-bottom: 1.5rem; /* More space below category titles */
+    padding-bottom: 0.75rem; /* More padding for the bottom border */
+    border-bottom-width: 3px; /* Thicker bottom border */
+    border-color: #60a5fa; /* A more vibrant blue for the border */
+    display: flex; /* Use flexbox for icon and text alignment */
+    align-items: center; /* Align items vertically */
+    font-size: 1.875rem; /* Larger font size for headings */
+}
+
+h2 i {
+    margin-right: 0.75rem; /* Space between icon and text */
+    font-size: 1.75rem; /* Adjust icon size to match heading */
+}
+
+/* Style for individual document items */
+.p-4 {
+    padding: 1.25rem; /* Slightly more padding for each document card */
+    margin-bottom: 0.75rem; /* Add some space between document cards */
+}
+
+.font-medium {
+    font-weight: 600; /* Make document titles a bit bolder */
+    font-size: 1.125rem; /* Slightly larger font for document titles */
+}
+
+.text-sm {
+    font-size: 0.9rem; /* Slightly larger font for descriptions */
+}
+
+.text-blue-600 {
+    color: #2563eb; /* Darker blue for links */
+}
+
+.hover\:text-blue-800:hover {
+    color: #1e40af; /* Even darker blue on hover */
+}
+
+/* Adjust icon sizes within document links */
+.text-xl {
+    font-size: 1.3rem; /* Slightly larger file type icons */
+}
+
+.text-xs {
+    font-size: 0.75rem; /* Slightly larger download icon */
+}
+
+/* Specific styling for "no file" PDF icon */
+.text-gray-400 {
+    color: #9ca3af; /* A slightly darker gray for better visibility */
+}
+
+/* File type specific icon colors */
+.bi-file-earmark-pdf-fill {
+    color: #dc3545; /* Red for PDF */
+}
+
+.bi-file-earmark-word-fill {
+    color: #007bff; /* Blue for DOCX */
+}
+
+.bi-file-earmark-excel-fill {
+    color: #28a745; /* Green for XLSX */
+}
+
+.bi-file-earmark-ppt-fill {
+    color: #ffc107; /* Orange for PPTX */
+}
+
+/* Override for "no file" PDF icon to ensure it stays gray */
+.text-gray-400 .bi-file-earmark-pdf-fill {
+    color: #9ca3af; /* Gray for unavailable PDF */
+}

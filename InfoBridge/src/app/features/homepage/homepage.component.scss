@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.development-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.bi-pc-display {
+  font-size: 6em; /* ลองปรับขนาดตามต้องการ */
+  color: #777; /* ปรับสีถ้าต้องการ */
+  margin-bottom: 10px; /* เพิ่ม margin ด้านล่างข้อความ */
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #777;
+  font-size: 1.1em;
+}
